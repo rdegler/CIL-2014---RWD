@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html>
+<head>
+    <title>16 Page02 tabs w/ content</title>
+    <!-- 
+        This defines that the width of the viewport will be the same as the device. 
+        The scale of the website will be set to 100%.
+     -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap css files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- Custom local CSS  -->
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+	<div class="container">
+		
+	<!-- Header -->
+		<div class="row">
+			<div class="col-sm-7 col-xs-12 ">
+				<img src="img/logo.png" class="img-responsive">
+			</div>
+			<div class="col-sm-5 col-xs-12 ">
+				<ul class="list-inline social_style  text-right">
+					<li><a href="#">Facebook </a></li>
+					<li><a href="#">Twitter </a></li>
+					<li><a href="#">Pinterest</a></li>
+				</ul>
+			</div>		
+		</div>
+
+	<!-- Navigation -->	
+		<div class="row">
+			<div class="col-xs-12">
+				
+				<!-- Navbar is wrapped in a <nav>  -->
+				<nav class="navbar navbar-inverse" role="navigation">
+				
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+					
+						<!-- Toggle to expand when collapsed -->
+						<!-- Use unique data-target with matching id for navbar-collapse div to have multiple navbars on a page -->
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+					
+						<!-- Toggle to expand when collapsed -->
+						<a class="navbar-brand" href="index.html">Home</a>
+					</div>
+					
+					<!-- Collect the nav links, forms, and other content for toggling -->	
+					<div class="collapse navbar-collapse" id="navbar1">
+						
+						<!-- Navbars have a navbar-left and navbar-right  --> 
+						<!-- if you do not include the above it will be on the left  --> 	
+						<ul class="nav navbar-nav navbar-left">
+							<li><a href="#">Catalog</a></li>  
+							<li><a href="#">Calendar</a></li> 						
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Read <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="page01.html">Content</a></li>  
+							        <li><a href="page02.html">Tabs</a></li> 
+							        <li class="divider"></li>
+							        <li><a href="page03.html">Forms</a></li> 					        
+								</ul>
+							</li>     
+						</ul>
+						
+						<!-- This can be either a <form> or <ul> of links  -->
+						<!-- For this example I included a default form -->    	
+						<form class="navbar-form navbar-right" role="search">			
+							<input type="text" class="form-control" placeholder="Search">		
+						</form>
+					
+					</div><!-- /.navbar-collapse -->
+				
+				</nav>				
+				
+				
+				
+				
+			</div>
+		</div>
+
+   
+	<!-- Main Content -->
+
+    	<div class="row">
+            <div class="col-sm-9">
+
+<h2 class="page-header">
+					First Impressions 
+					<small>(<a href="http://www.bulwer-lytton.com/2013win.html">from Bulwer-Lytton Fiction Contest</a>)</small> 
+				</h2>
+
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+				  <li class="active"><a href="#crime" data-toggle="tab">Mystery</a></li>
+				  <li><a href="#romance" data-toggle="tab">Romance</a></li>
+				  <li><a href="#scifi" data-toggle="tab">SciFi</a></li>
+				  <li><a href="#history" data-toggle="tab">Historical</a></li>
+				</ul>
+
+
+				<!-- Tab panes -->
+				<div class="tab-content booklist">
+					<div class="tab-pane active" id="crime">
+						<dl >
+						  	<dt>Mystery Book 1</dt>
+						  	<dd>It was such a beautiful night; the bright moonlight illuminated the sky, the thick clouds floated leisurely by just above the silhouette of tall, majestic trees, and I was viewing it all from the front row seat of the bullet hole in my car trunk.</dd> 
+						  	<dt>Mystery Book 2</dt>
+						  	<dd>Seeing Mrs. Kohler sink, Detective Moen flushed as he plugged the burglary as the unmistakable work of Cap Fawcet, the Mad Plumber, for not only had her pool of assets been drained, but her clogs were now missing, and the toilet had been removed, leaving them with absolutely nothing to go on. 
+						  	</dd>
+						 </dl>
+					
+					</div>
+					<div class="tab-pane " id="romance">
+						
+						<dl>
+					        <dt>Romance Book 1</dt>
+					
+					        <dd>He had a way with women that was at first endearing, then gradually engendered caution and finally outright rejection, like potato salad at a summer picnic.
+					        </dd>
+					
+					        <dt>Romance Book 2</dt>
+					
+					        <dd>On their first date he’d asked how much she thought Edgar Allan Poe’s toe nails would sell for on eBay, and on their second he paid for subway fair with nickels he fished out of a fountain, but he was otherwise charming and she thought that they could have a perfectly tolerable life together.
+					        </dd>
+					    </dl>
+					
+					</div>
+					<div class="tab-pane" id="scifi">
+						
+						<dl>
+					        <dt>SciFi Book 1</dt>
+					
+					        <dd>The Mushroom Men of Knarf were silently advancing on the unsuspecting earthlings, and their thin milky blood ran colder when they smelled spores from&nbsp;fungal toenail&nbsp;infections rising from many of the invaders’ feet, for to them it was a wondrous and shocking&nbsp;scent of kinship, homeland,&nbsp;and asexual reproduction.</dd>
+					
+					        <dt>SciFi Book 2</dt>
+					
+					        <dd>This was going to be a science fiction novel until I realized that you actually have to know some real science for it to work well, so I changed it to a fantasy novel instead, because that way I can just make up the rules as I go, unhampered by the laws of physics or chemistry, as if you knew what they were anyway.</dd>
+					    </dl>
+
+					
+					</div>
+					<div class="tab-pane" id="history">
+					    <dl>
+					        <dt>Historical Book 1</dt>
+					
+					        <dd>It was a long shot by any measure, good bowman though he was, and he didn’t want to risk it with his kid, but a lot was&nbsp;on the line,&nbsp;and that big, red apple was square on his dear&nbsp;boy’s head, and&nbsp;he had to shoot it off … then everything&nbsp;went still, and William Tell&nbsp;heard the sound of music, quiet, then gently rising,&nbsp;like an overture.</dd>
+					
+					        <dt>Historical Book 2</dt>
+					
+					        <dd>General Lee arranged for the dreaded surrender, yet capitalized on his opponents’ weaknesses to the very end, striking a tiny parting blow for the Army of Northern Virginia (chuckling to himself) as he remembered from Academy days how many Union commanders had struggled with spelling even common words, and so ran his finger along the map and settled on Appomattox.</dd>
+					    </dl>
+					
+					</div>
+				</div>            	   
+
+
+
+            </div>
+            <div class="col-sm-3">
+            	<div class="list-group">
+				  <a href="opt1.html" class="list-group-item">
+				    Opt 1 (Modal)
+				  </a>
+				  <a href="opt2.html" class="list-group-item">Opt 2 (Carousel)</a>
+				  <a href="opt3.html" class="list-group-item">Opt 3 (FontAwesome)</a>
+				  <a href="opt4.html" class="list-group-item">Opt 4 (Flex Video)</a>
+				  
+				</div>
+            	
+            	
+            </div>
+    	</div>
+ 
+    
+	<!-- Footer -->    
+	   <hr/>
+	   <div class="row">
+	   		<div class="col-sm-4">
+	   			<strong>Hours</strong>
+	   			<ul class="list-unstyled">
+	   				<li>M-F: 9-9</li>
+	   				<li>S-S: 10-7</li>
+	   			</ul>
+	   		</div>
+	   		<div class="col-sm-4">
+	   			<strong>Contact us</strong>
+	   			<ul class="list-unstyled">
+	   				<li>(555) 555-1212</li>
+	   				<li>help@thelibrary.org</li>
+	   			</ul>
+	   		</div>
+	   		<div class="col-sm-4">
+	   			<strong>Visit us</strong>
+	   			<ul class="list-unstyled">
+	   				<li>123 S. Main St.</li>
+	   				<li>Hometown, USA</li>
+	   			</ul>
+	   		</div>
+	   </div>		
+	</div>       
+     
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js" type="text/javascript"></script>
+   
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+</body>
+</html>
